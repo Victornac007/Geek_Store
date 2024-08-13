@@ -21,14 +21,14 @@
 }
 
 .header__logoHome p{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
 }
 .header__logoHome-title-01{
-    color: rgb(25, 75, 169);
+    color: rgb(56, 113, 219);
 }
 .header__logoHome-title-02{
-    color: rgba(70, 72, 79, 0.603);
+    color: orangered;
 }
 
 .header__logoHome-image {
