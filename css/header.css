@@ -15,6 +15,25 @@
 
 .header__logoHome {
     margin: 0 50px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+}
+
+.header__logoHome p{
+    font-size: 24px;
+    font-weight: 800;
+}
+.header__logoHome-title-01{
+    color: rgb(25, 75, 169);
+}
+.header__logoHome-title-02{
+    color: rgba(70, 72, 79, 0.603);
+}
+
+.header__logoHome-image {
+    max-width: 35px;
+    margin: 5px;
 }
 
 .header__search:hover {
