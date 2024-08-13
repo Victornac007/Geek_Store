@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/Favicon_GeekStore.png" type="image/x-icon">
+    <title>Geek_Store</title>
+    <!-- Links a CSS  -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/products.css">
 </head>
 <body>
     <header class = "header__container">
         <div class = "header__items">
             <a class = "header__logoHome" href = "index.html">
-                <img alt = "logo" class = "header__logoHome-image" src = "assets/img/logo.svg">
+                <img alt = "logo" class = "header__logoHome-image" src = "./img/logo.svg">
             </a>
             <div class = "header__search" id = "search__container">
                 <input class = "header__search-input"
@@ -51,12 +57,127 @@
                             <h2 class = "banner__info-title">Juegos</h2>
                             <p class = "banner__info-description">Juegos para todos los gustos</p>
                         </div>
-                        <a href = "#consolas" rel = "">
+                        <a href = "#videoGames" rel = "">
                             <button class = "banner__button">Ver Juegos</button>
                         </a>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- seccion de VIDEOJUEGOS -->
+        <section class = "products" id = "videoGames">
+            <div class = "product__container">
+                <div class = "product__header">
+                    <h2 class = "product__title">Juegos</h2>
+                    <a class = "product__mostrar" href = "screens/allProducts">ver todos
+                                                <img alt = "ver todos icon"
+                                                src = "./img/productos/arow.svg"></a>
+                </div>
+                <div class = "product__list" data-videoGamesCategory>
+                    <div class="juegos__card--1 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./img/productos/juegos/product_ZeldaTotk.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">The Legeng Of Zelda: TOTK</p>
+                            <p class="card__info--price">$56.98</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--2 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./img/productos/juegos/product__ForzaHorizon5" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Forza Horizon 5</p>
+                            <p class="card__info--price">$49.989</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--3 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./img/productos/juegos/product_horizonFw.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Horizon: Forbiden West</p>
+                            <p class="card__info--price">$56.98</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--4 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./img/productos/juegos/produtc__AC_Valhalla.webp" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Assassins Creed: Valhalla</p>
+                            <p class="card__info--price">$56.98</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--5 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./img/productos/juegos/product__star_wars-FO.jpeg" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Stars Wars: Fallen Order</p>
+                            <p class="card__info--price">$56.98</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- seccion de CONSOLAS -->
+        <section class = "products" id = "consolas">
+            <div class = "product__container">
+                <div class = "product__header">
+                    <h2 class = "product__title">Consolas </h2>
+                    <a class = "product__mostrar">ver todos<img alt = "ver todos icon" src = "assets/img/productos/arow.svg"></a>
+                </div>
+                <div class = "product__list" data-consolasCategoria>
+                    <div class="juegos__card--1 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./assets/img/productos/consolas/xbox.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Xbox One Series X</p>
+                            <p class="card__info--price">$449.98</p>
+                        </div>
+                    </div>
+                    <div class="juegos__card--2 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./assets/img/productos/consolas/ps5_blue.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Play Station 5: Edición azul</p>
+                            <p class="card__info--price">$549.989</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--3 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./assets/img/productos/consolas/flagship.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Nintendo Switch</p>
+                            <p class="card__info--price">$296.98</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--4 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./assets/img/productos/consolas/switchOled__especialEdition Totk.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Nintendo Switch: Totk Edition</p>
+                            <p class="card__info--price">$456.98</p>
+                        </div>
+                    </div>  
+                    <div class="juegos__card--5 game__card product__card">
+                        <div class="product__card--img">
+                            <img src="./assets/img/productos/consolas/switchOled.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <p class="product__card--title">Nintendo Switch Edición Oled</p>
+                            <p class="card__info--price">$56.98</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
