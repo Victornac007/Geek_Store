@@ -20,7 +20,7 @@
             <div class = "header__search" id = "search__container">
                 <input class = "header__search-input"
                     id = "search__items"
-                    placeholder = " Qué desea buscar ?"
+                    placeholder = " Qué deseas buscar ?"
                     type = "text">
                 <button class = "header__search-button" id = "search__action"><img alt = ""
                     class = "header__search-icon"
@@ -127,12 +127,12 @@
             <div class = "product__container">
                 <div class = "product__header">
                     <h2 class = "product__title">Consolas </h2>
-                    <a class = "product__mostrar">ver todos<img alt = "ver todos icon" src = "assets/img/productos/arow.svg"></a>
+                    <a class = "product__mostrar">ver todos<img alt = "ver todos icon" src = "./img/productos/arow.svg"></a>
                 </div>
                 <div class = "product__list" data-consolasCategoria>
                     <div class="juegos__card--1 game__card product__card">
                         <div class="product__card--img">
-                            <img src="./assets/img/productos/consolas/xbox.png" alt="">
+                            <img src="./img/productos/consolas/xbox.png" alt="">
                         </div>
                         <div class="card__info">
                             <p class="product__card--title">Xbox One Series X</p>
@@ -141,7 +141,7 @@
                     </div>
                     <div class="juegos__card--2 game__card product__card">
                         <div class="product__card--img">
-                            <img src="./assets/img/productos/consolas/ps5_blue.png" alt="">
+                            <img src="./img/productos/consolas/ps5_blue.png" alt="">
                         </div>
                         <div class="card__info">
                             <p class="product__card--title">Play Station 5: Edición azul</p>
@@ -150,7 +150,7 @@
                     </div>  
                     <div class="juegos__card--3 game__card product__card">
                         <div class="product__card--img">
-                            <img src="./assets/img/productos/consolas/flagship.png" alt="">
+                            <img src="./img/productos/consolas/flagship.png" alt="">
                         </div>
                         <div class="card__info">
                             <p class="product__card--title">Nintendo Switch</p>
@@ -159,7 +159,7 @@
                     </div>  
                     <div class="juegos__card--4 game__card product__card">
                         <div class="product__card--img">
-                            <img src="./assets/img/productos/consolas/switchOled__especialEdition Totk.png" alt="">
+                            <img src="./img/productos/consolas/switchOled__especialEdition Totk.png" alt="">
                         </div>
                         <div class="card__info">
                             <p class="product__card--title">Nintendo Switch: Totk Edition</p>
@@ -168,7 +168,7 @@
                     </div>  
                     <div class="juegos__card--5 game__card product__card">
                         <div class="product__card--img">
-                            <img src="./assets/img/productos/consolas/switchOled.png" alt="">
+                            <img src="./img/productos/consolas/switchOled.png" alt="">
                         </div>
                         <div class="card__info">
                             <p class="product__card--title">Nintendo Switch Edición Oled</p>
@@ -179,5 +179,49 @@
             </div>
         </section>
     </main>
+    <footer>
+        <section class = "contacto__container">
+            <div class = "contacto__logo">
+                <a href = "../index.html">
+                    <img alt = "logo" class = "contacto__logoFooter" src = "./img/logo.svg">
+                </a>
+            </div>
+            <div class = "contacto__info">
+                <ul>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Quienes somos</a></li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Política de privacidad</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Programa de fidelidad</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Nuestras Tiendas</a></li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Quiero ser franquiciado</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            <form class = "contacto__contactar" id = "form__data">
+                <h2 class = "contacto__contactar-title">Hable con nosotros</h2>
+    
+                <label class = "contacto__contactar-nombre contacto__textBox">
+                    Nombre
+                    <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = " Su nombre"
+                           required type = "text">
+                </label>
+    
+                <label class = "contacto__mensaje contacto__textBox">
+                    Escribe tu mensaje
+                    <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required placeholder=" Mensaje" ></textarea>
+                </label>
+    
+                <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
+            </form>
+        </section>  
+        <div class="info__dev">
+            <p>Desarrollado por <a href="https://api.whatsapp.com/send?phone=56942501330&text=">VicToCode</a></p>
+            <p>2023</p>
+            <a href="https://github.com/Victornac007"><img src="./assets/img/github.svg " alt="git"></a>
+            <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="./assets/img/linkedin.svg" alt="linkedin"></a>
+        </div>
+    </footer>
 </body>
 </html>
