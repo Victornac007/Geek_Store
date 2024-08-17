@@ -80,7 +80,7 @@
     background: transparent;
 }
 
-.header__login-button {
+.header__cart-button {
     border: none;
     color: var(--color_fondo-o-letra_botones-2);
     padding: 16px 70px;
@@ -93,14 +93,14 @@
     transition: .6s;
 }
 
-.header__login-button:hover {
+.header__cart-button:hover {
     box-shadow: 10px 5px 10px 5px rgba(77, 95, 187, 0.376);
     transform: scale(1.06);
     background-color: var(--color_fondo-o-letra_botones-2);
     color: white;
 }
 
-.header__login-button:active {
+.header__cart-button:active {
     box-shadow: inset 0 0 30px 8px rgba(22, 26, 45, 0.11), 0 0 5px 1px #000000;
     transform: scale(0.99);
 }

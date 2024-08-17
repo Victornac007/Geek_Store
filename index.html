@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/Favicon_GeekStore.png" type="image/x-icon">
     <title>Geek_Store</title>
-    <!-- Links a CSS  -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/products.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/formStyle.css">
-
-
     <!-- link de fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+     <!-- Links a CSS  -->
+     <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="stylesheet" href="./css/variables.css">
+     <link rel="stylesheet" href="./css/header.css">
+     <link rel="stylesheet" href="./css/banner.css">
+     <link rel="stylesheet" href="./css/products.css">
+     <link rel="stylesheet" href="./css/footer.css">
+     <link rel="stylesheet" href="./css/formStyle.css">
 </head>
 <body>
     <header class = "header__container">
@@ -39,8 +40,12 @@
                 </button>
             </div>
         </div>
-        <a class = "header__login" href = "screens/login.html">
-            <button class = "header__login-button">Login</button>
+        <a class = "header__login" href = "./pages/cart.html">
+            <button class = "header__cart-button">
+                ver carrito
+                <i class="bi bi-cart" ></i>
+                <span id="cart-count">0</span>
+            </button>
         </a>
     </header>
     <main>
@@ -75,6 +80,16 @@
                 </div>
             </div>
         </section>
+        <!-- seccion de navbar -->
+         <nav>
+            <div class = "nav__container">
+                <ul class = "nav__list">
+                    <li class = "nav__list--li"><a class = "nav__list--link" href = "#">Consolas</a></li>
+                    <li class = "nav__list--li"><a class = "nav__list--link" href = "#">Juegos</a></li>
+                    <li class = "nav__list--li"><a class = "nav__list--link" href = "#">Accesorios</a></li>
+                </ul>
+            </div>
+         </nav>
         <!-- seccion de VIDEOJUEGOS -->
         <section class = "products" id = "videoGames">
             <div class = "product__container">
