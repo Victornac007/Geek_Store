@@ -104,6 +104,7 @@ const products =[
         },
         price: 309.99,
     },
+
 ]
 const allProductsContainer = document.querySelector("#products__container")
 
