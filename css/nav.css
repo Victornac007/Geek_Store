@@ -44,7 +44,7 @@ ul{
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
-.nav__button:active{
+.nav__button-active{
     color: var(--contrast-ligth-color);
     background-color: #554ac5b9;
     backdrop-filter: blur(8px);
@@ -55,10 +55,10 @@ ul{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 1rem;
 }
-.buttom-i{
-    transform: rotate(90deg);
-}
-.nav__button:active i{
+.nav__button-active i{
     transform: rotate(180deg);
     color: var(--contrast-ligth-color);
+}
+.buttom-i{
+    transform: rotate(90deg);
 }

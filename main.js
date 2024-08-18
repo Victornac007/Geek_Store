@@ -107,6 +107,7 @@ const products =[
 
 ]
 const allProductsContainer = document.querySelector("#products__container")
+const categoryButtoms = document.querySelectorAll(".category-buttom")
 
 function cargarProducto(){
     products.forEach(producto => {
@@ -133,6 +134,13 @@ function cargarProducto(){
     });
 }
 
+categoryButtoms.forEach(buttom => {
+    buttom.addEventListener("click", (e) => {
+        categoryButtoms.forEach(buttom => buttom.classList.remove("nav__button-active"))
+
+    e.currentTarget.classList.add("nav__button-active")
+    })
+} )
 
 
 
