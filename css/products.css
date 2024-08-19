@@ -96,7 +96,6 @@
     box-shadow: 10px 5px 10px 5px rgba(22, 26, 45, 0.31);
     border: solid 3px  chartreuse;
     transform: scale(1.02);
-    cursor: pointer;
 }
 
 .product__card:active {
@@ -218,15 +217,28 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
+    gap: 5px;
 }
 
-.card-btn {
-    height: 30px;
+.add-btn {
+    display: flex;
+    align-items: center;
+    color: var(--contrast-dark-color);
+    gap: 5px;
+    height: 35px;
     background: transparent;
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--color_fondo-o-letra_botones-2);
     border-radius: 5px;
-    padding: 0 15px;
+    padding: 0 20px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
     transition: all 0.3s;
+    cursor: pointer;
+}
+
+.add-btn i {
+    cursor: pointer;
 }
 .card-btn svg {
     width: 100%;

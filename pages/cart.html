@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/products.css">
     <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/banner.css">
 </head>
 <body>
     <header class = "header__container">
@@ -37,13 +38,40 @@
             </button>
         </a>
     </header>
-    <header>
-        <div class="logo">
-            <a href="index.html">Tienda Online</a>
+    <section class = "banner">
+        <div class = "banner__container">
+            <div class = "banner__container-show banner__container-img">
+                <div class = "banner__info_1">
+                    <h2 class = "banner__info-title">Semana Promocional</h2>
+                    <p class = "banner__info-description">Productos seleccionados con 33% de descuento</p>
+                    <a href = "#consolas" rel = "">
+                        <button class = "banner__button">Ver productos</button>
+                    </a>
+                </div>
+                <div class="banner__info_2">
+                    <div class="info_banner">
+                        <h2 class = "banner__info-title">Consolas</h2>
+                        <p class = "banner__info-description">Elige el poder de jugar</p>
+                    </div>
+                    <a href = "#consolas" rel = "">
+                        <button class = "banner__button">Ver Consolas</button>
+                    </a>
+                </div>
+                <div class="banner__info_3">
+                    <div class="info_banner">
+                        <h2 class = "banner__info-title">Juegos</h2>
+                        <p class = "banner__info-description">Juegos para todos los gustos</p>
+                    </div>
+                    <a href = "#videoGames" rel = "">
+                        <button class = "banner__button">Ver Juegos</button>
+                    </a>
+                </div>
+            </div>
         </div>
-
+    </section>
     <main class="cart-container">
-        <h1>Carrito de Compras</h1>
+        
+        <h2>Carrito de Compras</h2>
         <div class="cart-items"></div>
         <div class="cart-summary">
             <p>Total: $<span id="total-amount">0.00</span></p>

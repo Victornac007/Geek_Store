@@ -82,17 +82,34 @@
 
 .header__cart-button {
     border: none;
-    color: var(--color_fondo-o-letra_botones-2);
+    color: var(--contrast-ligth-color) ;
     padding: 16px 70px;
     margin: 0 1rem;
-    background-color: transparent;
+    font-family: var(--fuente_principal);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--color_fondo-o-letra_botones-2);
     border: 1px solid var(--color_fondo-o-letra_botones-2);
     cursor: pointer;
     text-decoration: none;
     border-radius: 3rem;
     transition: .6s;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10000;
 }
-
+.header__cart-button span{
+    width: 35px;
+    padding: 5px 8px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--contrast-ligth-color);
+    color:  var(--color_fondo-o-letra_botones-2);
+    border-radius: 8px;
+}
 .header__cart-button:hover {
     box-shadow: 10px 5px 10px 5px rgba(77, 95, 187, 0.376);
     transform: scale(1.06);
