@@ -171,8 +171,16 @@ function updateAddButtoms(){
 document.addEventListener("DOMContentLoaded", () => {
     cargarProducto(products);
 });
+let productsInCart;
 
-const productsInCart = [];
+let productsInCartLs = localStorage.getItem("products-In-Cart");
+
+if(productsInCartLs){
+    productsInCart =  JSON.parse(productsInCartLs);
+    updateCartCount();
+} else{
+    productsInCart = [];
+}
 
 function addToCart (e){
     const idButtom = e.currentTarget.id;
