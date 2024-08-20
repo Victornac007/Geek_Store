@@ -5,7 +5,9 @@ const emptyCart = document.querySelector("#empty-cart")
 const productsCartView = document.querySelector("#ProductsCartsView")
 const cartActionsContainer = document.querySelector("#cart-actions")
 const buyedCart = document.querySelector("#buyed-cart")
+const buttomPay = document.querySelector("#buy-btn-cart")
 const buttomActionEmptyCart = document.querySelector("#action-empty-cart")
+const totalContainer = document.querySelector("#total-price")
 let deleteButtoms = document.querySelectorAll(".delete-product-cart-btn")
 
 function updateProductsCart(){
@@ -14,7 +16,7 @@ function updateProductsCart(){
         buyedCart.classList.add("disabled");
         productsCartView.classList.remove("disabled");
         cartActionsContainer.classList.remove("disabled");
-    
+        
         productsCartView.innerHTML = "";
     
         productsInCart.forEach(product => {
@@ -56,7 +58,7 @@ function updateProductsCart(){
         cartActionsContainer.classList.add("disabled");
     }
     updateDeleteButtoms();
-
+    updateTotal()
 }
 document.addEventListener("DOMContentLoaded", () => {
     updateProductsCart();
@@ -89,4 +91,20 @@ function actionEmptyCart(){
     productsInCart.length = 0;
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
     updateProductsCart();
+}
+function updateTotal(){
+    const calculatedTotal =productsInCart.reduce((acc, product) => acc + (product.price * product.quantify), 0);
+    totalContainer.innerText = `$${calculatedTotal}`;
+}
+
+buttomPay.addEventListener("click", payCart);
+function payCart(){
+    
+    productsInCart.length = 0;
+    localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
+
+    emptyCart.classList.add("disabled");
+    buyedCart.classList.remove("disabled");
+    productsCartView.classList.add("disabled");
+    cartActionsContainer.classList.add("disabled");
 }
