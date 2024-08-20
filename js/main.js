@@ -57,7 +57,7 @@ const products =[
     {
         id: "console-01",
         name: "Xbox One Series X",
-        img: "./img/productos/consolas/xbox.png",
+        img: "https://assets.xboxservices.com/assets/12/7e/127e5830-82cb-4f6c-beef-4f9a0c970430.jpg?n=Consoles-Hub_Content-Placement_Hub-SX_788x444.jpg",
         category:{
             name: "consoles",
             id: "consoles"
@@ -103,6 +103,76 @@ const products =[
             id: "consoles"
         },
         price: 309.99,
+    },
+    {
+        id: "console-06",
+        name: "Xbox Series S: 1 TB (negro)",
+        img:"https://assets.xboxservices.com/assets/67/fb/67fb575e-0693-4cc6-aff7-4884483283cc.jpg?n=Consoles-Hub_Content-Placement_Hub_247813_788x444.jpg",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 389.990
+    },
+    {
+        id: "console-07",
+        name: "Xbox Series S",
+        img:"https://assets.xboxservices.com/assets/c9/10/c910f756-7999-42c3-9f66-aa30fece2ae8.jpg?n=Consoles-Hub_Content-Placement_Hub-SS_788x444.jpg",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 329.990
+    },
+    {
+        id: "accesories-01",
+        name: "Control inalámbrico Xbox Elite Series 2: básico (blanco)",
+        img:"https://assets.xboxservices.com/assets/a8/a6/a8a65641-dabd-467b-8399-f9020ecdfca6.jpg?n=Accessories-Hub_Content-Placement-0_320089_788x444.jpg",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 99.990
+    },
+    {
+        id: "accesories-02",
+        name: "Control inalámbrico Xbox Elite Series 2",
+        img:"https://assets.xboxservices.com/assets/13/c9/13c9e42e-7802-4437-be3d-e694ae180578.jpg?n=999666_Content-Placement-0_Accessory-hub_740x417.jpg",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 89.990
+    },
+    {
+        id: "accesories-03",
+        name: "Audífonos estéreo de Xbox",
+        img:"https://assets.xboxservices.com/assets/96/cd/96cd4d25-4891-4f62-8dd4-591c337f335c.jpg?n=Accessories-Hub_Content-Placement-0_300350_788x444.jpg",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 29.990
+    },
+    {
+        id: "accesories-04",
+        name: "Audífonos inalámbricos Xbox: Starfield Limited Edition",
+        img:"https://assets.xboxservices.com/assets/2e/5e/2e5e57aa-ac65-4869-8db9-8cc1c73d1a6f.jpg?n=Accessories-Hub_Content-Placement-0_541123_788x444.jpg",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 49.990
+    },
+    {
+        id: "accesories-05",
+        name: "Control inalámbrico Xbox: Edición limitada Starfield",
+        img:"https://assets.xboxservices.com/assets/0c/e5/0ce542fe-436c-4220-93ad-8cacfdaf4b25.jpg?n=Accessories-Hub_Content-Placement-0_10293844_788x444.jpg",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 79.990
     },
 
 ];
