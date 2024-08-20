@@ -70,20 +70,35 @@
         </div>
     </section>
     <main class="cart-container">
-        <h2>Carrito de Compras</h2>
-        <p > Tu carro aún está vacío. <a href="../index.html">Mirar tienda</a> </p>
-        <div id="ProductsCartsView" class="cart-items"></div>
-        <div class="cart-summary">
-            <p>Total: $<span id="total-amount">0.00</span></p>
-            <button id="checkout-btn" class="btn">Pagar</button>
-        </div>
+        <h2 class="tittle-cart">Carrito de Compras</h2>
+        <section class="cart-container">
+            <p class="empty-cart" id="empty-cart" > Tu carro aún está vacío. <a href="../index.html">Gasta tu dinero con nostrosos <strong>aquí</strong> </a> </p>
+
+            <div id="ProductsCartsView" class="cart-items product-car disabled">
+                <!-- Esto se va a completar con el JS -->
+            </div>
+
+            <div id="cart-actions" class="cart-actions disabled">
+                <div class="cart-actions-left">
+                    <button id="action-empty-cart" class="action-empty-cart-btn ">Vaciar carrito</button>
+                </div>
+                <div class="cart-actions-right">
+                    <div class="cart-action-total">
+                    <p>Total: $<span id="total-price">0.00</span></p>
+                    </div>
+                    <button id="buy-btn-cart" class="btn">Pagar</button>
+                </div>
+            </div>
+        </section>
+        <p id="buyed-cart" class="buyed-cart disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
     </main>
 
     <footer>
         <section class = "contacto__container">
             <div class = "contacto__logo">
                 <a class = "header__logoHome" href = "index.html">
-                    <img alt = "logo" class = "header__logoHome-image" src = "./img/Logo_GeekStore.png">
+                    <img alt = "logo" class = "header__logoHome-image" src = "../img/Logo_GeekStore.png">
                     <p class = "header__logoHome-title-01">Geek</p>
                     <p class = "header__logoHome-title-02">Store</p>
                 </a>
@@ -125,7 +140,7 @@
             <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="./img/linkedin.svg" alt="linkedin"></a>
         </div>
     </footer>
-
+    <script src="../js/cart.js"></script>
     <script src="../main.js"></script>
 </body>
 </html>
