@@ -2,7 +2,7 @@ const products =[
     {
         id: "game-01",
         name: "The Legend Of Zelda: TOTK",
-        img: "./img/productos/juegos/product_ZeldaTotk.png",
+        img: "./img/productos/juegos/product-zeldatotk.webp",
         description: "The Legend of Zelda: Tears of the Kingdom is an action-adventure game developed",
         category: {
             name: "videoGames",
@@ -13,7 +13,7 @@ const products =[
     {
         id: "game-02",
         name: "Forza Horazon 5",
-        img: "./img/productos/juegos/product__ForzaHorizon5.png",
+        img: "./img/productos/juegos/product-forzaHorizon5.webp",
         description: "Forza Horizon 5 is an action-adventure game developed by Playground Games",
         category: {
             name: "videoGames",
@@ -24,7 +24,7 @@ const products =[
     {
         id: "game-03",
         name: "Horizon Forbidden West",
-        img: "./img/productos/juegos/product_horizonFw.png",
+        img: "./img/productos/juegos/product-horizonfw.webp",
         description: "Horizon: Forbiden West is an action-adventure game developed by Guerrilla Games",
         category: {
             name: "videoGames",
@@ -46,7 +46,7 @@ const products =[
     {
         id: "game-05",
         name: "Stars Wars: Fallen Order",
-        img: "./img/productos/juegos/product__star_wars-FO.jpeg",
+        img: "./img/productos/juegos/product-star-wars-fo.webp",
         description:"Stars Wars: Fallen Order is an action-adventure game developed by Electronics Art",
         category: {
             name: "videoGames",
@@ -57,7 +57,7 @@ const products =[
     {
         id: "console-01",
         name: "Xbox One Series X",
-        img: "https://assets.xboxservices.com/assets/12/7e/127e5830-82cb-4f6c-beef-4f9a0c970430.jpg?n=Consoles-Hub_Content-Placement_Hub-SX_788x444.jpg",
+        img: "./img/productos/consolas/Xbox-one-Series-X.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -67,7 +67,7 @@ const products =[
     {
         id: "console-02",
         name: "PlayStation 5: blue edition",
-        img: "./img/productos/consolas/ps5_blue.png",
+        img: "./img/productos/consolas/ps5_blue.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -77,7 +77,7 @@ const products =[
     {
         id: "console-03",
         name: "Nintendo Swicth",
-        img:"./img/productos/consolas/flagship.png",
+        img:"./img/productos/consolas/flagship.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -87,7 +87,7 @@ const products =[
     {
         id: "console-04",
         name: "Nintendo Swicth: TOTK Edition",
-        img:"./img/productos/consolas/switchOled__especialEdition Totk.png",
+        img:"./img/productos/consolas/switchOled__especialEdition Totk.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -97,7 +97,7 @@ const products =[
     {
         id: "console-05",
         name: "Nintendo Swicth: OLED Edition",
-        img:"./img/productos/consolas/switchOled.png",
+        img:"./img/productos/consolas/switchOled.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -107,7 +107,7 @@ const products =[
     {
         id: "console-06",
         name: "Xbox Series S: 1 TB (negro)",
-        img:"https://assets.xboxservices.com/assets/67/fb/67fb575e-0693-4cc6-aff7-4884483283cc.jpg?n=Consoles-Hub_Content-Placement_Hub_247813_788x444.jpg",
+        img:"./img/productos/consolas/Xbox-Series-S-1TB-Black.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -117,7 +117,7 @@ const products =[
     {
         id: "console-07",
         name: "Xbox Series S",
-        img:"https://assets.xboxservices.com/assets/c9/10/c910f756-7999-42c3-9f66-aa30fece2ae8.jpg?n=Consoles-Hub_Content-Placement_Hub-SS_788x444.jpg",
+        img:"img/productos/consolas/Xbox-series-s-white.webp",
         category:{
             name: "consoles",
             id: "consoles"
@@ -125,9 +125,49 @@ const products =[
         price: 329.990
     },
     {
+        id: "console-08",
+        name: "Game Boy",
+        img:"./img/productos/consolas/game-boy.webp",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 499.990
+    },
+    {
+        id: "console-09",
+        name: "Play Station VR",
+        img:"./img/productos/consolas/control-y-consola2.webp",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 399.990
+    },
+    {
+        id: "console-10",
+        name: "Nintendo 1",
+        img:"./img/productos/consolas/nintendo1.webp",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 199.990
+    },
+    {
+        id: "console-11",
+        name: "Nintendo Switch Lite",
+        img:"./img/productos/consolas/Nintendo-Switch-LITE.webp",
+        category:{
+            name: "consoles",
+            id: "consoles"
+        },
+        price: 199.990
+    },
+    {
         id: "accesories-01",
         name: "Control inalámbrico Xbox Elite Series 2: básico (blanco)",
-        img:"https://assets.xboxservices.com/assets/a8/a6/a8a65641-dabd-467b-8399-f9020ecdfca6.jpg?n=Accessories-Hub_Content-Placement-0_320089_788x444.jpg",
+        img:"./img/productos/diversos/Xbox-elite-controller-basic-white.webp",
         category:{
             name: "accesories",
             id: "accesories"
@@ -137,7 +177,7 @@ const products =[
     {
         id: "accesories-02",
         name: "Control inalámbrico Xbox Elite Series 2",
-        img:"https://assets.xboxservices.com/assets/13/c9/13c9e42e-7802-4437-be3d-e694ae180578.jpg?n=999666_Content-Placement-0_Accessory-hub_740x417.jpg",
+        img:"./img/productos/diversos/Xbox-controller-elite-series-2-black.webp",
         category:{
             name: "accesories",
             id: "accesories"
@@ -147,7 +187,7 @@ const products =[
     {
         id: "accesories-03",
         name: "Audífonos estéreo de Xbox",
-        img:"https://assets.xboxservices.com/assets/96/cd/96cd4d25-4891-4f62-8dd4-591c337f335c.jpg?n=Accessories-Hub_Content-Placement-0_300350_788x444.jpg",
+        img:"./img/productos/diversos/headphones-xbox.webp",
         category:{
             name: "accesories",
             id: "accesories"
@@ -157,7 +197,7 @@ const products =[
     {
         id: "accesories-04",
         name: "Audífonos inalámbricos Xbox: Starfield Limited Edition",
-        img:"https://assets.xboxservices.com/assets/2e/5e/2e5e57aa-ac65-4869-8db9-8cc1c73d1a6f.jpg?n=Accessories-Hub_Content-Placement-0_541123_788x444.jpg",
+        img:"./img/productos/diversos/headphones-specialEdition-StarfieldXbox.webp",
         category:{
             name: "accesories",
             id: "accesories"
@@ -167,14 +207,93 @@ const products =[
     {
         id: "accesories-05",
         name: "Control inalámbrico Xbox: Edición limitada Starfield",
-        img:"https://assets.xboxservices.com/assets/0c/e5/0ce542fe-436c-4220-93ad-8cacfdaf4b25.jpg?n=Accessories-Hub_Content-Placement-0_10293844_788x444.jpg",
+        img:"./img/productos/diversos/Xbox-controller-specialEditionStarfield.webp",
         category:{
             name: "accesories",
             id: "accesories"
         },
         price: 79.990
     },
-
+    {
+        id: "accesories-06",
+        name: "Control inalámbrico DualSense®",
+        img:"./img/productos/diversos/dualsense-imagePS5controller.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 74.990
+    },
+    {
+        id: "accesories-07",
+        name: "Control inalámbrico DualSense Edge™",
+        img:"./img/productos/diversos/DualSense--EdgeController.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 259.990
+    },
+    {
+        id: "accesories-08",
+        name: "Control Access™",
+        img:"./img/productos/diversos/access-controller-PS5.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 79.990
+    },
+    {
+        id: "accesories-09",
+        name: "Auriculares inalámbricos PULSE Explore™",
+        img:"./img/productos/diversos/PULSE-Explore-earbuds-thumbnailPS5.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 79.990
+    },
+    {
+        id: "accesories-10",
+        name: "Auriculares inalámbricos PULSE Elite™",
+        img:"./img/productos/diversos/PULSE-Elite-headset-thumbnailPS5.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 79.990
+    },
+    {
+        id: "accesories-11",
+        name: "Controles Nintendo Switch Joy-Con NEON",
+        img:"./img/productos/diversos/control_nintendo-switch.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 74.990
+    },
+    {
+        id: "accesories-12",
+        name: "Mando Nintendo Switch Pro Controller Zelda TOTK Edition",
+        img:"./img/productos/diversos/MandoNintendoSwitchProControllerZeldaTOTKEdition.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 79.990
+    },
+    {
+        id: "accesories-12",
+        name: "Mando Nintendo Switch Pro Controller",
+        img:"./img/productos/diversos/Nintendo-pro-black-controller-.webp",
+        category:{
+            name: "accesories",
+            id: "accesories"
+        },
+        price: 71.990
+    },
 ];
 const allProductsContainer = document.querySelector("#products__container")
 const categoryButtoms = document.querySelectorAll(".category-buttom")

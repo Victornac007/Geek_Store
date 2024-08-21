@@ -38,7 +38,7 @@
     }
 }
 main{
-    width: auto;
+    width: 100%;
     min-height: 80vh;
     height: auto;
     background-color: #3D2CFF;
