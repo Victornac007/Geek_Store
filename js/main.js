@@ -183,7 +183,7 @@ const products =[
     {
         id: "console-07",
         name: "Xbox Series S",
-        img:"img/productos/consolas/Xbox-series-s-white.webp",
+        img:"./img/productos/consolas/Xbox-series-s-white.webp",
         category:{
             name: "consoles",
             id: "consoles"

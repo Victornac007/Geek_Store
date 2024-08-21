@@ -106,7 +106,7 @@ function actionEmptyCart(){
     Swal.fire({
         icon: "success",
         title: "Tu carrito ha sido vaciado",
-        text: '<a href="../index.html">Ve nuestros sorprendentes productos</a>',
+        footer: '<a href="../index.html">Seguir explorando nuestros productos</a>',
       });
 }
 function updateTotal(){
