@@ -451,7 +451,7 @@ function addToCart (e){
     Toastify({
         text: "Agregado al carrito",
         duration: 3000,
-        destination: "../pages/cart.html",
+        destination: "https://victornac007.github.io/Geek_Store/pages/cart.html",
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
