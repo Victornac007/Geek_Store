@@ -12,7 +12,7 @@ const products =[
     },
     {
         id: "game-02",
-        name: "Forza Horazon 5",
+        name: "Forza Horizon 5",
         img: "./img/productos/juegos/product-forzaHorizon5.webp",
         description: "Forza Horizon 5 is an action-adventure game developed by Playground Games",
         category: {
@@ -34,7 +34,7 @@ const products =[
     },
     {
         id: "game-04",
-        name: "Assassins Creed: Valhalla",
+        name: "Assassin's Creed: Valhalla",
         img: "./img/productos/juegos/produtc__AC_Valhalla.webp",
         description: "Assassins Creed: Valhalla is an action-adventure game developed by Ubisoft",
         category: {
@@ -53,6 +53,61 @@ const products =[
             id: "videoGames"
         },
         price: 56.98,
+    },
+    {
+        id: "game-06",
+        name: "Stars Wars: Out Laws",
+        img: "./img/productos/juegos/Stars-Wars_outlaws.webp",
+        description:"Stars Wars: Out Laws is an action-adventure game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 76.98,
+    },
+    {
+        id: "game-07",
+        name: "Raimbow Six Siege",
+        img: "./img/productos/juegos/Raimbow-Six.webp",
+        description:"Raimbow Six Siege is an action-FPS game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 16.98,
+    },
+    {
+        id: "game-08",
+        name: "Ghost Recon: Wild Lands",
+        img: "./img/productos/juegos/Ghost-recon-tom-clancy.webp",
+        description:"Ghost Recon: Wild Lands is an action-FPS game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 16.98,
+    },
+    {
+        id: "game-09",
+        name: "Assassin's Creed Mirage",
+        img: "./img/productos/juegos/Assassins-creed-Miradge.webp",
+        description:"Assassin's Creed Mirage is an action-adventure game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 56.98,
+    },
+    {
+        id: "game-10",
+        name: "Assassin's Creed: Shadows",
+        img: "./img/productos/juegos/ACSshadows.webp",
+        description:"Assassin's Creed: Shadows is an action-adventure game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 86.98,
     },
     {
         id: "console-01",
