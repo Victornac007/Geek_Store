@@ -101,7 +101,7 @@ const products =[
     {
         id: "game-10",
         name: "Assassin's Creed: Shadows",
-        img: "./img/productos/juegos/ACSshadows.webp",
+        img: "./img/productos/juegos/asscShadows.webp",
         description:"Assassin's Creed: Shadows is an action-adventure game developed by Ubysoft",
         category: {
             name: "videoGames",
