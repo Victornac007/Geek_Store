@@ -13,7 +13,7 @@ const products =[
     {
         id: "game-02",
         name: "Forza Horizon 5",
-        img: "./img/productos/juegos/product-forzaHorizon5.webp",
+        img: "./img/productos/juegos/product-forzahorizon5.webp",
         description: "Forza Horizon 5 is an action-adventure game developed by Playground Games",
         category: {
             name: "videoGames",
