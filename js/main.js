@@ -57,7 +57,7 @@ const products =[
     {
         id: "game-06",
         name: "Stars Wars: Out Laws",
-        img: "./img/productos/juegos/Stars-Wars_outlaws.webp",
+        img: "./img/productos/juegos/StarsWarsOutLaws.webp",
         description:"Stars Wars: Out Laws is an action-adventure game developed by Ubysoft",
         category: {
             name: "videoGames",
@@ -74,7 +74,7 @@ const products =[
             name: "videoGames",
             id: "videoGames"
         },
-        price: 16.98,
+        price: 6.98,
     },
     {
         id: "game-08",
@@ -96,7 +96,7 @@ const products =[
             name: "videoGames",
             id: "videoGames"
         },
-        price: 56.98,
+        price: 19.98,
     },
     {
         id: "game-10",
@@ -108,6 +108,17 @@ const products =[
             id: "videoGames"
         },
         price: 86.98,
+    },
+    {
+        id: "game-11",
+        name: "Avatar: Frontiers of Pandora",
+        img: "./img/productos/juegos/Avatar-uby.webp",
+        description:"Avatar: Frontiers of Pandora is an action-adventure game developed by Ubysoft",
+        category: {
+            name: "videoGames",
+            id: "videoGames"
+        },
+        price: 29.98,
     },
     {
         id: "console-01",
@@ -437,7 +448,20 @@ function addToCart (e){
         productsInCart.push(productAdded)
     }
     updateCartCount()
-
+    Toastify({
+        text: "Agregado al carrito",
+        duration: 3000,
+        destination: "../pages/cart.html",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #0c72d6, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart))
 };
 function updateCartCount(){

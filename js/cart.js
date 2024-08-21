@@ -80,7 +80,19 @@ function deleteFromCart(e){
     productsInCart.splice(index, 1)
 
     updateProductsCart();
-
+    Toastify({
+        text: "eliminado del carrito",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #0c72d6, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
     
 }
@@ -91,6 +103,11 @@ function actionEmptyCart(){
     productsInCart.length = 0;
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
     updateProductsCart();
+    Swal.fire({
+        icon: "success",
+        title: "Tu carrito ha sido vaciado",
+        text: '<a href="../index.html">Ve nuestros sorprendentes productos</a>',
+      });
 }
 function updateTotal(){
     const calculatedTotal =productsInCart.reduce((acc, product) => acc + (product.price * product.quantify), 0);
@@ -107,4 +124,12 @@ function payCart(){
     buyedCart.classList.remove("disabled");
     productsCartView.classList.add("disabled");
     cartActionsContainer.classList.add("disabled");
+
+    Swal.fire({
+        title: "Compra Realizada!",
+        icon: "success",
+        text: 'Muchas gracias por tu compra. Te llegaran en menos de 24Horas!',
+        footer: '<a href="../index.html">Seguir explorando nuestros productos</a>',
+        confirmButtonText: '¡Entendido!'
+      });
 }
