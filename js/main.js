@@ -295,10 +295,10 @@ const products =[
         price: 71.990
     },
 ];
-const allProductsContainer = document.querySelector("#products__container")
-const categoryButtoms = document.querySelectorAll(".category-buttom")
-let addButtoms = document.querySelectorAll(".add-btn")
-const countCart = document.querySelector("#cart-count")
+const allProductsContainer = document.querySelector("#products__container");
+const categoryButtoms = document.querySelectorAll(".category-buttom");
+let addButtoms = document.querySelectorAll(".add-btn");
+const countCart = document.querySelector("#cart-count");
 
 function cargarProducto(productsChoiced){
 
@@ -326,11 +326,10 @@ function cargarProducto(productsChoiced){
                 </div>
             </div>
             `
-
         allProductsContainer.appendChild(div);
     });
     updateAddButtoms()
-}
+};
 
 categoryButtoms.forEach(buttom => {
     buttom.addEventListener("click", (e) => {
@@ -346,7 +345,7 @@ categoryButtoms.forEach(buttom => {
         }
         
     })
-} )
+} );
 
 
 function updateAddButtoms(){
@@ -369,7 +368,7 @@ if(productsInCartLs){
     updateCartCount();
 } else{
     productsInCart = [];
-}
+};
 
 function addToCart (e){
     const idButtom = e.currentTarget.id;
@@ -385,9 +384,9 @@ function addToCart (e){
     updateCartCount()
 
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart))
-}
+};
 function updateCartCount(){
     let newCount = productsInCart.reduce((acc, product) => acc + product.quantify, 0)
     countCart.innerHTML = newCount
     console.log(newCount);
-}
+};
