@@ -131,5 +131,5 @@ function payCart(){
         text: 'Muchas gracias por tu compra. Te llegaran en menos de 24Horas!',
         footer: '<a href="../index.html">Seguir explorando nuestros productos</a>',
         confirmButtonText: '¡Entendido!'
-      });
+    });
 }
