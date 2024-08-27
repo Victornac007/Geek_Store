@@ -6,9 +6,9 @@
     margin: 0 auto;
     padding: 10px;
     align-items: center;
-    backdrop-filter: blur(18px);
+    background-color: rgb(23, 23, 79);
     position: sticky;
-    top: 0;
+    top: 60px;
     z-index: 100;
 }
 .nav__container ul{
@@ -46,7 +46,7 @@ ul{
 }
 .nav__button-active{
     color: var(--contrast-ligth-color);
-    background-color: #554ac5b9;
+    background-color: #0c72d6;
     backdrop-filter: blur(8px);
     background-attachment: fixed;
     background-size: cover;
