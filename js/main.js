@@ -5,13 +5,16 @@ fetch("./js/products.json")
     .then(data => {
         products = data;
         updateProductsContainer(products);
+        displayCategory("videoGames", "videoGamesCategory");
+        displayCategory("consoles", "consolesCategory");
     });
 
 const allProductsContainer = document.querySelector("#products__container");
 const categoryButtoms = document.querySelectorAll(".category-buttom");
 let addButtoms = document.querySelectorAll(".add-btn");
 const countCart = document.querySelector("#cart-count");
-const videoGamesContainer = document.querySelector("videoGamesCategory");
+const productsContainer = document.getElementById("products__container");
+
 
 function updateProductsContainer(productsChoiced){
 
@@ -60,37 +63,38 @@ categoryButtoms.forEach(buttom => {
     })
 } );
 
-// const displayVideoGames = () => {
-//     products.forEach(product =>{
+const displayCategory = (categoryId, containerId) => {
+    const container = document.querySelector(`#${containerId}`);
+    const categoryProducts = products.filter(product => product.category.id === categoryId);
 
+    container.innerHTML = "";
 
-//         if(product.category.id === "videoGames"){
-//             const div = document.createElement("div");
-//             div.classList.add("product__card");
-//             div.innerHTML = `
-//                 <div class="product__card--img">
-//                     <img src="${product.img}" alt="${product.name}">
-//                 </div>
-//                 <div class="card__info">
-//                     <h3 class="product__card--title">${product.name}</h3>
-//                     <hr class="card-divider">
-//                     <div class="card-footer">
-//                         <div class="card-price">
-//                             <span class="card__info--price">$</span>${product.price ? product.price : 'Precio no disponible'}
-//                         </div>
-//                         <button class="add-btn" id="${product.id}">
-//                             Agregar
-//                             <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
-//                         </button>
-//                     </div>
-//                 </div>
-//             `
-//         }
-        
-//     })
-//     };
+    categoryProducts.forEach(product => {
+        const div = document.createElement("div");
+        div.classList.add("product__card");
+        div.innerHTML = `
+            <div class="product__card--img">
+                <img src="${product.img}" alt="${product.name}">
+            </div>
+            <div class="card__info">
+                <h3 class="product__card--title">${product.name}</h3>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price">
+                        <span class="card__info--price">$</span>${product.price ? product.price : 'Precio no disponible'}
+                    </div>
+                    <button class="add-btn" id="${product.id}">
+                        Agregar
+                        <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
+                    </button>
+                </div>
+            </div>
+        `;
+        container.appendChild(div);
+    });
+    updateAddButtoms();
+};
 
-// displayVideoGames();
 
 function updateAddButtoms(){
     addButtoms = document.querySelectorAll(".add-btn");

@@ -74,26 +74,48 @@ function updateDeleteButtoms(){
 };
 
 function deleteFromCart(e){
+
     const idButtom = e.currentTarget.id;
     const index = productsInCart.findIndex(product => product.id === idButtom)
 
-    productsInCart.splice(index, 1)
+    
+    Swal.fire({
+        title: "Estas seguro?",
+        text: "No podrás revertir esto!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, Sacar del carrito!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
+            updateProductsCart();
+            Swal.fire({
+            title: "Eliminado!",
+            text: "Haz sacado tu producto del carrito de compras.",
+            icon: "success"
+        });
+        productsInCart.splice(index, 1)
 
-    updateProductsCart();
-    Toastify({
-        text: "eliminado del carrito",
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-            background: "linear-gradient(to right, #0c72d6, #96c93d)",
-        },
-        onClick: function(){} // Callback after click
-    }).showToast();
-    localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
+        updateProductsCart();
+        
+        Toastify({
+            text: "eliminado del carrito",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+                background: "linear-gradient(to right, #0c72d6, #96c93d)",
+            },
+            onClick: function(){} 
+        }).showToast();
+        localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
+        }
+    });
     
 }
 
