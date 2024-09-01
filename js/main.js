@@ -11,6 +11,7 @@ const allProductsContainer = document.querySelector("#products__container");
 const categoryButtoms = document.querySelectorAll(".category-buttom");
 let addButtoms = document.querySelectorAll(".add-btn");
 const countCart = document.querySelector("#cart-count");
+const videoGamesContainer = document.querySelector("videoGamesCategory");
 
 function updateProductsContainer(productsChoiced){
 
@@ -59,6 +60,37 @@ categoryButtoms.forEach(buttom => {
     })
 } );
 
+// const displayVideoGames = () => {
+//     products.forEach(product =>{
+
+
+//         if(product.category.id === "videoGames"){
+//             const div = document.createElement("div");
+//             div.classList.add("product__card");
+//             div.innerHTML = `
+//                 <div class="product__card--img">
+//                     <img src="${product.img}" alt="${product.name}">
+//                 </div>
+//                 <div class="card__info">
+//                     <h3 class="product__card--title">${product.name}</h3>
+//                     <hr class="card-divider">
+//                     <div class="card-footer">
+//                         <div class="card-price">
+//                             <span class="card__info--price">$</span>${product.price ? product.price : 'Precio no disponible'}
+//                         </div>
+//                         <button class="add-btn" id="${product.id}">
+//                             Agregar
+//                             <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
+//                         </button>
+//                     </div>
+//                 </div>
+//             `
+//         }
+        
+//     })
+//     };
+
+// displayVideoGames();
 
 function updateAddButtoms(){
     addButtoms = document.querySelectorAll(".add-btn");

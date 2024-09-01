@@ -99,15 +99,26 @@ function deleteFromCart(e){
 
 buttomActionEmptyCart.addEventListener("click", actionEmptyCart);
 function actionEmptyCart(){
-    
-    productsInCart.length = 0;
-    localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
-    updateProductsCart();
     Swal.fire({
-        icon: "success",
-        title: "Tu carrito ha sido vaciado",
-        footer: '<a href="../index.html">Seguir explorando nuestros productos</a>',
-      });
+        title: "Estas seguro?",
+        text: "No podrás revertir esto!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, Vaciar Carrito!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            productsInCart.length = 0;
+            localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart));
+            updateProductsCart();
+            Swal.fire({
+            title: "Vaciado!",
+            text: "Tu carrito de compras ha sido vaciado.",
+            icon: "success"
+        });
+        }
+    });
 }
 function updateTotal(){
     const calculatedTotal =productsInCart.reduce((acc, product) => acc + (product.price * product.quantify), 0);

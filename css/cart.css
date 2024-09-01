@@ -46,6 +46,22 @@
     transition: background-color 0.3s ease;
     margin: 5px;
 }
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(250, 250, 250, 0.252);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: large;
+}
+.empty-cart a{
+    text-decoration: none;
+    font-family: var(--font-family);
+}
 .action-empty-cart-btn{
     background-color: var(---color_fondo_claro);
     color: var(--primary-color);
