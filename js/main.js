@@ -28,7 +28,6 @@ function updateProductsContainer(productsChoiced){
         const div = document.createElement("div");
         div.classList.add("product__card");
         div.innerHTML = `
-            <a id="product_a" href="${product.id}.html">
                 <div class="product__card--img">
                     <img src="${product.img}" alt="${product.name}">
                 </div>
@@ -45,7 +44,6 @@ function updateProductsContainer(productsChoiced){
                         </button>
                     </div>
                 </div>
-            </a>
             `
         allProductsContainer.appendChild(div);
     });
