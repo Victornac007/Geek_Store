@@ -14,6 +14,9 @@ const categoryButtoms = document.querySelectorAll(".category-buttom");
 let addButtoms = document.querySelectorAll(".add-btn");
 const countCart = document.querySelector("#cart-count");
 const productsContainer = document.getElementById("products__container");
+const searchInput = document.querySelector("#search__items")
+// const urlParams = new URLSearchParams(window.location.search);
+// const idProduct = urlParams.get('id');
 
 
 function updateProductsContainer(productsChoiced){
@@ -25,22 +28,24 @@ function updateProductsContainer(productsChoiced){
         const div = document.createElement("div");
         div.classList.add("product__card");
         div.innerHTML = `
-            <div class="product__card--img">
-                <img src="${product.img}" alt="${product.name}">
-            </div>
-            <div class="card__info">
-                <h3 class="product__card--title">${product.name}</h3>
-                <hr class="card-divider">
-                <div class="card-footer">
-                    <div class="card-price">
-                        <span class="card__info--price">$</span>${product.price ? product.price : 'Precio no disponible'}
-                    </div>
-                    <button class="add-btn" id="${product.id}">
-                        Agregar
-                        <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
-                    </button>
+            <a id="product_a" href="${product.id}.html">
+                <div class="product__card--img">
+                    <img src="${product.img}" alt="${product.name}">
                 </div>
-            </div>
+                <div class="card__info">
+                    <h3 class="product__card--title">${product.name}</h3>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="card__info--price">$</span>${product.price ? product.price : 'Precio no disponible'}
+                        </div>
+                        <button class="add-btn" id="${product.id}">
+                            Agregar
+                            <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
             `
         allProductsContainer.appendChild(div);
     });
@@ -95,6 +100,22 @@ const displayCategory = (categoryId, containerId) => {
     updateAddButtoms();
 };
 
+const handleSearch = () => {
+    const searchTerm = searchInput.value.toLocaleLowerCase()
+
+    const filteredProducts = products.filter(product => product.name.toLocaleLowerCase().startsWith(searchTerm));
+
+    updateProductsContainer(filteredProducts)
+    if (filteredProducts.length === 0){ {
+
+    }
+    if(!searchTerm){
+        updateProductsContainer(products)
+    }
+    };
+};
+searchInput.addEventListener("input", handleSearch);
+
 
 function updateAddButtoms(){
     addButtoms = document.querySelectorAll(".add-btn");
@@ -144,7 +165,7 @@ function addToCart (e){
     localStorage.setItem("products-In-Cart", JSON.stringify(productsInCart))
 };
 function updateCartCount(){
-    let newCount = productsInCart.reduce((acc, product) => acc + product.quantify, 0)
-    countCart.innerHTML = newCount
-    console.log(newCount);
+
+    let newCount = productsInCart.reduce((acc, product) => acc + product.quantify, 0);
+    countCart.innerHTML = newCount;
 };
