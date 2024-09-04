@@ -2,8 +2,8 @@
     {
         "id": "game-01",
         "name": "The Legend Of Zelda: TOTK",
-        "img": "./img/productos/juegos/product-zeldatotk.webp",
-        "description": "The Legend of Zelda: Tears of the Kingdom is an action-adventure game developed",
+        "img": "/img/productos/juegos/product-zeldatotk.webp",
+        "description": "The Legend of Zelda: Tears of the Kingdom (ゼルダの伝説 ティアーズ オブ ザ キングダム) es un videojuego de la saga The Legend of Zelda, desarrollado por Nintendo para su consola Nintendo Switch. Es una secuela del videojuego de 2017 The Legend of Zelda: Breath of the Wild.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -13,8 +13,8 @@
     {
         "id": "game-02",
         "name": "Forza Horizon 5",
-        "img": "./img/productos/juegos/product-forzahorizon5.webp",
-        "description": "Forza Horizon 5 is an action-adventure game developed by Playground Games",
+        "img": "/img/productos/juegos/product-forzahorizon5.webp",
+        "description": "Forza Horizon 5 es un videojuego de carreras multijugador en línea desarrollado por Playground Games y publicado por Xbox Game Studios. Es el quinto título de Forza Horizon y la duodécima entrega principal de la serie Forza. El juego está ambientado en una representación ficticia de México.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -24,8 +24,8 @@
     {
         "id": "game-03",
         "name": "Horizon Forbidden West",
-        "img": "./img/productos/juegos/product-horizonfw.webp",
-        "description": "Horizon: Forbiden West is an action-adventure game developed by Guerrilla Games",
+        "img": "/img/productos/juegos/product-horizonfw.webp",
+        "description": "Horizon Forbidden West es un videojuego de rol de acción, aventura y mundo abierto desarrollado por Guerrilla Games y distribuido por Sony Interactive Entertainment, el juego está disponible para PlayStation 4, PlayStation 5 y a partir del 21 de marzo del 2024 para Microsoft Windows. Es la secuela de Horizon Zero Dawn. El juego está protagonizado por Aloy, una joven cazadora de la tribu Nora que viaja al Oeste Prohibido para investigar una misteriosa y mortífera plaga mientras hace frente a otros peligros. Su lanzamiento fue el 18 de febrero de 2022.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -35,8 +35,8 @@
     {
         "id": "game-04",
         "name": "Assassin's Creed: Valhalla",
-        "img": "./img/productos/juegos/produtc__AC_Valhalla.webp",
-        "description": "Assassins Creed: Valhalla is an action-adventure game developed by Ubisoft",
+        "img": "/img/productos/juegos/produtc__AC_Valhalla.webp",
+        "description": "Assassin's Creed Valhalla es un videojuego de rol de acción desarrollado por Ubisoft Montreal y publicado por Ubisoft. Es el decimosegundo en importancia y el vigesimosegundo lanzado dentro de la saga de Assassin Creed, y sucesor al juego del 2018 Assassin's Creed Odyssey.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -46,8 +46,8 @@
     {
         "id": "game-05",
         "name": "Stars Wars: Fallen Order",
-        "img": "./img/productos/juegos/product-star-wars-fo.webp",
-        "description":"Stars Wars: Fallen Order is an action-adventure game developed by Electronics Art",
+        "img": "/img/productos/juegos/product-star-wars-fo.webp",
+        "description":"Star Wars Jedi: Fallen Order, traducido en algunas tiendas digitales como Star Wars Jedi: La Orden caída, es un videojuego de acción y aventura para un solo jugador desarrollado por Respawn Entertainment y publicado por Electronic Arts, ambientado en el universo de Star Wars.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -57,8 +57,8 @@
     {
         "id": "game-06",
         "name": "Stars Wars: Out Laws",
-        "img": "./img/productos/juegos/StarsWarsOutLaws.webp",
-        "description":"Stars Wars: Out Laws is an action-adventure game developed by Ubysoft",
+        "img": "/img/productos/juegos/StarsWarsOutLaws.webp",
+        "description":"Star Wars Outlaws es un videojuego de mundo abierto y de acción-aventuras creado por Massive Entertainment​ y lanzado por Ubisoft.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -68,8 +68,8 @@
     {
         "id": "game-07",
         "name": "Raimbow Six Siege",
-        "img": "./img/productos/juegos/Raimbow-Six.webp",
-        "description":"Raimbow Six Siege is an action-FPS game developed by Ubysoft",
+        "img": "/img/productos/juegos/Raimbow-Six.webp",
+        "description":"Tom Clancy's Rainbow Six: Siege es un videojuego de disparos táctico en línea desarrollado por Ubisoft Montreal y distribuidor por Ubisoft. Salió a la venta en todo el mundo para Microsoft Windows, PlayStation 4 y Xbox One el 1 de diciembre de 2015 y para PlayStation 5 y Xbox Series X|S el 1 de diciembre de 2020.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -79,8 +79,8 @@
     {
         "id": "game-08",
         "name": "Ghost Recon: Wild Lands",
-        "img": "./img/productos/juegos/Ghost-recon-tom-clancy.webp",
-        "description":"Ghost Recon: Wild Lands is an action-FPS game developed by Ubysoft",
+        "img": "/img/productos/juegos/Ghost-recon-tom-clancy.webp",
+        "description":"Tom Clancy's Ghost Recon Wildlands es un videojuego de disparos táctico perteneciente al género de mundo abierto desarrollado por la empresa Ubisoft Paris y distribuido por Ubisoft para Microsoft Windows, PlayStation 4 y Xbox One.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -90,8 +90,8 @@
     {
         "id": "game-09",
         "name": "Assassin's Creed Mirage",
-        "img": "./img/productos/juegos/Assassins-creed-Miradge.webp",
-        "description":"Assassin's Creed Mirage is an action-adventure game developed by Ubysoft",
+        "img": "/img/productos/juegos/Assassins-creed-Miradge.webp",
+        "description":"Assassin's Creed Mirage es un videojuego de acción y aventura de mundo abierto y sigilo en tercera persona desarrollado por Ubisoft Bordeaux y publicado por Ubisoft. Es la decimotercera entrega principal de la serie Assassin's Creed y el sucesor de Assassin's Creed Valhalla de 2020.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -101,8 +101,8 @@
     {
         "id": "game-10",
         "name": "Assassin's Creed: Shadows",
-        "img": "./img/productos/juegos/asscShadows.webp",
-        "description":"Assassin's Creed: Shadows is an action-adventure game developed by Ubysoft",
+        "img": "/img/productos/juegos/asscShadows.webp",
+        "description":"Assassin's Creed Shadows es un próximo videojuego de rol de acción desarrollado por Ubisoft Quebec y publicado por Ubisoft, que se lanzará en noviembre de 2024. El juego es la decimocuarta entrega principal de la serie Assassin's Creed y el sucesor de Assassin's Creed Mirage de 2023.",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -112,8 +112,8 @@
     {
         "id": "game-11",
         "name": "Avatar: Frontiers of Pandora",
-        "img": "./img/productos/juegos/Avatar-uby.webp",
-        "description":"Avatar: Frontiers of Pandora is an action-adventure game developed by Ubysoft",
+        "img": "/img/productos/juegos/Avatar-uby.webp",
+        "description":"Avatar: Frontiers of Pandora es un videojuego de acción y aventura de mundo abierto basado en la serie de películas Avatar de James Cameron.​ El juego fue desarrollado por Massive Entertainment y publicado por Ubisoft para Microsoft Windows, PlayStation 5, Xbox Series X|S y Amazon Luna el 7 de diciembre del 2023.​",
         "category": {
             "name": "videoGames",
             "id": "videoGames"
@@ -123,7 +123,7 @@
     {
         "id": "console-01",
         "name": "Xbox One Series X",
-        "img": "./img/productos/consolas/Xbox-one-Series-X.webp",
+        "img": "/img/productos/consolas/Xbox-one-Series-X.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -133,7 +133,7 @@
     {
         "id": "console-02",
         "name": "PlayStation 5: blue edition",
-        "img": "./img/productos/consolas/ps5_blue.webp",
+        "img": "/img/productos/consolas/ps5_blue.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -143,7 +143,7 @@
     {
         "id": "console-03",
         "name": "Nintendo Switch",
-        "img":"./img/productos/consolas/flagship.webp",
+        "img":"/img/productos/consolas/flagship.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -153,7 +153,7 @@
     {
         "id": "console-04",
         "name": "Nintendo Switch: TOTK Edition",
-        "img":"./img/productos/consolas/switchOled__especialEdition Totk.webp",
+        "img":"/img/productos/consolas/switchOled__especialEdition Totk.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -163,7 +163,7 @@
     {
         "id": "console-05",
         "name": "Nintendo Switch: OLED Edition",
-        "img":"./img/productos/consolas/switchOled.webp",
+        "img":"/img/productos/consolas/switchOled.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -173,7 +173,7 @@
     {
         "id": "console-06",
         "name": "Xbox Series S: 1 TB (negro)",
-        "img":"./img/productos/consolas/Xbox-Series-S-1TB-Black.webp",
+        "img":"/img/productos/consolas/Xbox-Series-S-1TB-Black.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -183,7 +183,7 @@
     {
         "id": "console-07",
         "name": "Xbox Series S",
-        "img":"./img/productos/consolas/Xbox-series-s-white.webp",
+        "img":"/img/productos/consolas/Xbox-series-s-white.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -193,7 +193,7 @@
     {
         "id": "console-08",
         "name": "Game Boy",
-        "img":"./img/productos/consolas/game-boy.webp",
+        "img":"/img/productos/consolas/game-boy.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -203,7 +203,7 @@
     {
         "id": "console-09",
         "name": "Play Station VR",
-        "img":"./img/productos/consolas/control-y-consola2.webp",
+        "img":"/img/productos/consolas/control-y-consola2.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -213,7 +213,7 @@
     {
         "id": "console-10",
         "name": "Nintendo 1",
-        "img":"./img/productos/consolas/nintendo1.webp",
+        "img":"/img/productos/consolas/nintendo1.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -223,7 +223,7 @@
     {
         "id": "console-11",
         "name": "Nintendo Switch Lite",
-        "img":"./img/productos/consolas/Nintendo-Switch-LITE.webp",
+        "img":"/img/productos/consolas/Nintendo-Switch-LITE.webp",
         "category":{
             "name": "consoles",
             "id": "consoles"
@@ -233,7 +233,7 @@
     {
         "id": "accesories-01",
         "name": "Control inalámbrico Xbox Elite Series 2: básico (blanco)",
-        "img":"./img/productos/diversos/Xbox-elite-controller-basic-white.webp",
+        "img":"/img/productos/diversos/Xbox-elite-controller-basic-white.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -243,7 +243,7 @@
     {
         "id": "accesories-02",
         "name": "Control inalámbrico Xbox Elite Series 2",
-        "img":"./img/productos/diversos/Xbox-controller-elite-series-2-black.webp",
+        "img":"/img/productos/diversos/Xbox-controller-elite-series-2-black.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -253,7 +253,7 @@
     {
         "id": "accesories-03",
         "name": "Audífonos estéreo de Xbox",
-        "img":"./img/productos/diversos/headphones-xbox.webp",
+        "img":"/img/productos/diversos/headphones-xbox.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -263,7 +263,7 @@
     {
         "id": "accesories-04",
         "name": "Audífonos inalámbricos Xbox: Starfield Limited Edition",
-        "img":"./img/productos/diversos/headphones-specialEdition-StarfieldXbox.webp",
+        "img":"/img/productos/diversos/headphones-specialEdition-StarfieldXbox.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -273,7 +273,7 @@
     {
         "id": "accesories-05",
         "name": "Control inalámbrico Xbox: Edición limitada Starfield",
-        "img":"./img/productos/diversos/Xbox-controller-specialEditionStarfield.webp",
+        "img":"/img/productos/diversos/Xbox-controller-specialEditionStarfield.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -283,7 +283,7 @@
     {
         "id": "accesories-06",
         "name": "Control inalámbrico DualSense®",
-        "img":"./img/productos/diversos/dualsense-imagePS5controller.webp",
+        "img":"/img/productos/diversos/dualsense-imagePS5controller.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -293,7 +293,7 @@
     {
         "id": "accesories-07",
         "name": "Control inalámbrico DualSense Edge™",
-        "img":"./img/productos/diversos/DualSense--EdgeController.webp",
+        "img":"/img/productos/diversos/DualSense--EdgeController.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -303,7 +303,7 @@
     {
         "id": "accesories-08",
         "name": "Control Access™",
-        "img":"./img/productos/diversos/access-controller-PS5.webp",
+        "img":"/img/productos/diversos/access-controller-PS5.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -313,7 +313,7 @@
     {
         "id": "accesories-09",
         "name": "Auriculares inalámbricos PULSE Explore™",
-        "img":"./img/productos/diversos/PULSE-Explore-earbuds-thumbnailPS5.webp",
+        "img":"/img/productos/diversos/PULSE-Explore-earbuds-thumbnailPS5.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -323,7 +323,7 @@
     {
         "id": "accesories-10",
         "name": "Auriculares inalámbricos PULSE Elite™",
-        "img":"./img/productos/diversos/PULSE-Elite-headset-thumbnailPS5.webp",
+        "img":"/img/productos/diversos/PULSE-Elite-headset-thumbnailPS5.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -333,7 +333,7 @@
     {
         "id": "accesories-11",
         "name": "Controles Nintendo Switch Joy-Con NEON",
-        "img":"./img/productos/diversos/control_nintendo-switch.webp",
+        "img":"/img/productos/diversos/control_nintendo-switch.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -343,7 +343,7 @@
     {
         "id": "accesories-12",
         "name": "Mando Nintendo Switch Pro Controller Zelda TOTK Edition",
-        "img":"./img/productos/diversos/MandoNintendoSwitchProControllerZeldaTOTKEdition.webp",
+        "img":"/img/productos/diversos/MandoNintendoSwitchProControllerZeldaTOTKEdition.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"
@@ -353,7 +353,7 @@
     {
         "id": "accesories-13",
         "name": "Mando Nintendo Switch Pro Controller",
-        "img":"./img/productos/diversos/Nintendo-pro-black-controller-.webp",
+        "img":"/img/productos/diversos/Nintendo-pro-black-controller-.webp",
         "category":{
             "name": "accesories",
             "id": "accesories"

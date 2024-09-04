@@ -8,15 +8,13 @@ fetch("./js/products.json")
         displayCategory("videoGames", "videoGamesCategory");
         displayCategory("consoles", "consolesCategory");
     });
-
 const allProductsContainer = document.querySelector("#products__container");
 const categoryButtoms = document.querySelectorAll(".category-buttom");
 let addButtoms = document.querySelectorAll(".add-btn");
 const countCart = document.querySelector("#cart-count");
 const productsContainer = document.getElementById("products__container");
 const searchInput = document.querySelector("#search__items")
-// const urlParams = new URLSearchParams(window.location.search);
-// const idProduct = urlParams.get('id');
+
 
 
 function updateProductsContainer(productsChoiced){
@@ -42,6 +40,9 @@ function updateProductsContainer(productsChoiced){
                             Agregar
                             <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
                         </button>
+                        <a href="./pages/product.html?id=${product.id}">
+                            ver mas
+                            <i class="bi bi-eye-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
                     </div>
                 </div>
             `

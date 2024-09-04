@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/products.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/show-product.css">
 </head>
 <body>
     <header class = "header__container">
@@ -75,13 +76,68 @@
     </section>
     <main>
         <section>
-            <h1 id="product-name"></h1>
-            <p id="description-product"></p>
+            <div id="product" class="product">
+                <h1>producto</h1>
+                <div class="product__container">
+                    <div class="product__img">
+                        <img src="${productShow.img}" alt="${productShow.name}">
+                    </div>
+                    <div class="product__info">
+                        <h2 class="product__title">${productShow.name}</h2>
+                        <p class="product__description">${productShow.description}</p>
+                        <p class="product__price">$${productShow.price}</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="../js/cart.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <footer>
+        <section class = "contacto__container">
+            <div class = "contacto__logo">
+                <a class = "header__logoHome" href = "index.html">
+                    <img alt = "logo" class = "header__logoHome-image" src = "../img/Logo_GeekStore.png">
+                    <p class = "header__logoHome-title-01">Geek</p>
+                    <p class = "header__logoHome-title-02">Store</p>
+                </a>
+            </div>
+            <!-- <div class = "contacto__info">
+                <ul>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Quienes somos</a></li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Política de privacidad</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Programa de fidelidad</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Nuestras Tiendas</a></li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Quiero ser franquiciado</a>
+                    </li>
+                    <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Anúncie aquí</a></li>
+                </ul>
+            </div> -->
+            <form class = "contacto__contactar" id = "form__data">
+                <h2 class = "contacto__contactar-title">Hable con nosotros</h2>
+    
+                <label class = "contacto__contactar-nombre contacto__textBox">
+                    Nombre
+                    <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = " Su nombre"
+                    required type = "text">
+                </label>
+    
+                <label class = "contacto__mensaje contacto__textBox">
+                    Escribe tu mensaje
+                    <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required placeholder=" Mensaje" ></textarea>
+                </label>
+    
+                <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
+            </form>
+        </section>  
+        <div class="info__dev">
+            <p>Desarrollado por <a href="https://api.whatsapp.com/send?phone=56942501330&text=">VicToCode</a></p>
+            <p>2024</p>
+            <a href="https://github.com/Victornac007"><img src="../img/icons/github.svg" alt="git"></a>
+            <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="../img/icons/linkedin.svg" alt="linkedin"></a>
+        </div>
+    </footer>
+    <script src="../js/product.js"></script>
+    <script>src="../js/main.js"</script>
 </body>
 </html>
