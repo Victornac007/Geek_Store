@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Favicon_GeekStore.png" type="image/x-icon">
     <title>Document</title>
+    <!-- link de fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- toast y boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/banner.css">
     <link rel="stylesheet" href="../css/show-product.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
     <header class = "header__container">
@@ -74,20 +80,37 @@
             </div>
         </div>
     </section>
+    <nav class = "nav__container">
+        <ul class = "nav__list">
+            <li class = "nav__list--li">
+                <a href="../index.html" class = "nav__button category-buttom" id="showAll">
+                    <i class="bi bi-hand-index-thumb-fill buttom-i"></i>
+                    Todos los productos
+                </a>
+            </li>
+            <li class = "nav__list--li">
+                <a href="../index.html" class = "nav__button category-buttom" >
+                    <i class="bi bi-hand-index-thumb buttom-i"></i>
+                    Juegos
+                </a>
+            </li>
+            <li class = "nav__list--li">
+                <a href="../index.html" class = "nav__button category-buttom" >
+                    <i class="bi bi-hand-index-thumb buttom-i"></i>
+                    Consolas
+                </a>
+            </li>
+            <li class = "nav__list--li">
+                <a href="../index.html" class = "nav__button category-buttom" >
+                    <i class="bi bi-hand-index-thumb buttom-i"></i>
+                    Accesorios
+                </a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section>
             <div id="product" class="product">
-                <h1>producto</h1>
-                <div class="product__container">
-                    <div class="product__img">
-                        <img src="${productShow.img}" alt="${productShow.name}">
-                    </div>
-                    <div class="product__info">
-                        <h2 class="product__title">${productShow.name}</h2>
-                        <p class="product__description">${productShow.description}</p>
-                        <p class="product__price">$${productShow.price}</p>
-                    </div>
-                </div>
             </div>
         </section>
     </main>

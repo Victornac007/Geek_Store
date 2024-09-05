@@ -27,7 +27,7 @@ function updateProductsContainer(productsChoiced){
         div.classList.add("product__card");
         div.innerHTML = `
                 <div class="product__card--img">
-                    <img src="${product.img}" alt="${product.name}">
+                    <img src=".${product.img}" alt="${product.name}">
                 </div>
                 <div class="card__info">
                     <h3 class="product__card--title">${product.name}</h3>
@@ -40,10 +40,13 @@ function updateProductsContainer(productsChoiced){
                             Agregar
                             <i class="bi bi-cart-plus-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
                         </button>
-                        <a href="./pages/product.html?id=${product.id}">
-                            ver mas
-                            <i class="bi bi-eye-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
+                        
                     </div>
+                    <hr class="card-divider">
+                    <a href="./pages/product.html?id=${product.id}">
+                        ver mas
+                        <i class="bi bi-eye-fill" style="font-size: 1.5rem; color: rgb(44, 73, 127);" ></i>
+                    </a>
                 </div>
             `
         allProductsContainer.appendChild(div);
