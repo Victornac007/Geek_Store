@@ -81,7 +81,7 @@ const displayCategory = (categoryId, containerId) => {
         div.classList.add("product__card");
         div.innerHTML = `
             <div class="product__card--img">
-                <img src="${product.img}" alt="${product.name}">
+                <img src=".${product.img}" alt="${product.name}">
             </div>
             <div class="card__info">
                 <h3 class="product__card--title">${product.name}</h3>
